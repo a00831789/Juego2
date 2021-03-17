@@ -37,7 +37,9 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        colors = ['black', 'blue', 'green', 'yellow', 'purple']
+        color = colors[randrange(0, 5)]
+        square(body.x, body.y, 9, color)
 
     square(food.x, food.y, 9, 'green')
     update()
