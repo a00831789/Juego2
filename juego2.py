@@ -19,3 +19,9 @@
     square(food.x, food.y, 9, color)  
     update()
     ontimer(move, 100)
+    
+  def change(x, y):
+    aim.x = x
+    aim.y = y
+    food.x = randrange(-15, 15) * 10
+    food.y = randrange(-15, 15) * 10
